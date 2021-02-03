@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 
 import { getFact } from "../actions";
 
+import "../styles/CatFacts.css";
+
 const CatFacts = ({ fact, isFetching, error, ...props }) => {
   const clickHandler = (e) => {
     e.preventDefault();
@@ -15,7 +17,7 @@ const CatFacts = ({ fact, isFetching, error, ...props }) => {
   return (
     <React.Fragment>
       <h2>
-        Your amazing Cat Fact:
+        Your amazing Cat Facts:
         {fact.map((item) => {
           return <p>{item.text}</p>;
         })}
@@ -25,7 +27,7 @@ const CatFacts = ({ fact, isFetching, error, ...props }) => {
           <h2 style={{ color: "red" }}>We got an error: {error}</h2>
         </div>
       )}
-      <button onClick={clickHandler}>New Cat Fact</button>
+      <button onClick={clickHandler}>Get your 6 Daily Cat Facts!</button>
     </React.Fragment>
   );
 };

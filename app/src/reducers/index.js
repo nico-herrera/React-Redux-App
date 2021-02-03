@@ -1,7 +1,7 @@
 import { FACT_RETRIEVED, START_FETCHING, FETCH_FAILED } from "../actions";
 
 const initialState = {
-  fact: null,
+  fact: [],
   isFetching: false,
   error: "",
 };

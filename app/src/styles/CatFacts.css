@@ -1,0 +1,27 @@
+body {
+  background-color: wheat;
+}
+
+h2 {
+  font-size: 2rem;
+  color: blue;
+}
+
+p {
+  font-size: 1.5rem;
+  border: 5px dotted black;
+  padding: 10px;
+  color: black;
+}
+
+p:hover {
+  font-size: 1.8rem;
+}
+
+button {
+  font-size: 2rem;
+}
+
+button:hover {
+  font-size: 2.1rem;
+}
